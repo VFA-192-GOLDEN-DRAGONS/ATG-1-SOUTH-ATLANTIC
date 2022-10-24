@@ -1,0 +1,5 @@
+You can customize the units within the enemy convoy that spawns by editing the group in the mission editor called "convoy_template_1"
+
+DO NOT CHANGE THE NAME OF THIS GROUP OR ELSE THE MISSION WILL NOT LOAD.
+
+Only use mobile ground units or else the convoy may not move.

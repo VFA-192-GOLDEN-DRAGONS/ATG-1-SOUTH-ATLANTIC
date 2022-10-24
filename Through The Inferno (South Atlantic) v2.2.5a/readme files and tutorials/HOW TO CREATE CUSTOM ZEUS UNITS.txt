@@ -1,0 +1,48 @@
+How to create and customize your own enemy units to spawn in using the TTI "Zeus" system (See Zeus tutorial text file for ref)
+
+There are example groups on the map for each unit type; Ground, Air, Helo, Sea. Please look at them for reference.
+
+
+-- CREATING YOUR CUSTOM GROUPS -- 
+
+1) Create your own air, ground, sea or helo group to your liking within the mission editor. You can create as many of these as you want.
+
+2) Name your group properly and take note of the group name. Each group type MUST start with the following prefixes for them to spawn correctly;
+
+Ground Groups: "custom_ground"
+Sea Groups: "custom_sea"
+Air/Fixed Wing Groups: "custom_air"
+Helo Groups: "custom_helo"
+
+Again, please reference the example groups in the editor.
+
+3) Make sure "LATE ACTIVATION" is checked on your custom group, or else the zeus spawning method will not work.
+
+4) Save your mission.
+
+5) Play or test flight your mission
+
+
+-- SPAWNING THE CUSTOM GROUP IN GAME --
+
+1) Create a map marker in the F10 Map
+
+2) Type in "-create" then your custom group's name. It should start with "custom_" and then the type; ground/sea/air/helo. 
+If your custom group's name was "custom_air_su30" then you would type "-create custom_air_su30"
+
+3) Close out/remove the map marker box by hitting the red "x" button on the top right corner of the map marker box to confirm the entry.
+
+4) Your custom group should now spawn. Enjoy!
+
+
+-- TRANSFERRING YOUR CUSTOM GROUPS TO OTHER TTI MAPS OR UPDATED TTI MISSIONS
+
+1) Multi-select groups in the mission editor by holding down SHIFT then left clicking the groups of your choice.
+
+2) Press CTRL+C to copy the group
+
+3) Open an updated TTI MIZ or a different TTI MAP
+
+4) Press CTRL+V to paste the group. Ensure that the groups names didn't add a -1,-2,-3 etc if you already had a group on this map with the same name.
+
+5) Save your mission and continue enjoying your custom groups!

@@ -1,0 +1,650 @@
+Through The Inferno (Dynamic DCS) by deadlyfishes is an endless, dynamic, and open-world PvE experience for DCS World.
+
+______________
+
+TTI: Eras of War - Experience the vast world of aerial combat operations past and present by selecting your desired conflict time period. 
+The mission experience will automatically generate suitable ground, air and sea missions based on your mission era selection without the need of loading a separate mission file!
+Current Mission Eras include: World War 2, Korean War, Modern. Unit spawns are still editable!
+
+Mission attributes such as setting how many ground units and ground unit type at missions and many other options are now editable in the mission editor! Check the tutorial text file how to go about editing the mission settings and what each setting does!
+______________
+
+Waypoints for missions are available for:
+F/A-18C, AV-8B, A-10C, JF-17, F-16C, M-2000C
+
+The waypoint of active missions are noted in the intel reports in your F-10 Other Menu.
+BULLSEYE is WPT-2
+______________
+
+All DCS modules, both fixed and rotary wing are available with a dynamic mission spawning and tasking menu.
+
+WW2 Asset Pack is optionally supported. If you own the WW2 Asset Pack, you can enable these units to fully experience and utilize them however you'd like.
+
+Use your COMMUNICATIONS MENU button to find the tasking menus. (Usually bound to your \ key ).
+______________
+
+A CUSTOM KNEEBOARD WITH A LIST OF TACANS/FREQUENCIES IS AVAILABLE! Usually, you can pull up the kneeboard with K or Shift-K. Use [ to navigate BACKWARDS to find the custom page(s). If those are not the controls for your kneeboard, check your control settings and search for "kneeboard"
+Info boxes, drawn routes will appear on the F10 Map if enabled. This can optionally be disabled in the mission settings.
+
+Frequencies:
+AWACS:
+"Focus" E-3A - 251 Mhz AM
+
+Tankers:
+KC-135 (Boom) “Texaco” 
+@19,000 FT 270 KTS
+255 Mhz AM 41Y TCN
+
+KC-135 (Boom) “Arco”
+@15,000 FT 205 KTS
+256 Mhz AM 39Y TCN
+
+KC-135 MPRS (Basket) “Shell”
+@19,000 FT 270 KTS
+254 Mhz AM 40Y TCN
+
+AIRBOSS Tanker S-3B (Basket) “Arco” 
+253 Mhz AM 31Y-AA TCN
+
+Carriers:
+LHA-1 Tarawa - 42X TCN
+ATC: 126.5 Mhz AM
+
+Kuznetsov
+ATC: 127.5 Mhz AM
+
+CVN-7X - 43X TCN
+CRS: Varies (Click on unit while in-game to find HEADING)
+ATC: 225.5 Mhz AM
+ICLS - 5
+ACLS: 336.0
+AIRBOSS AVAILABLE! Details and documentation for use:
+https://flightcontrol-master.github.io/MOOSE_DOCS_DEVELOP/Documentation/Ops.Airboss.html
+
+______________
+
+Available missions:
+
+Air to Air - Spawns a dynamically created enemy element flight. Choose between different difficulties. NOTE: These missions can infinitely stack, but an option is available to prevent stacking of forced air to air missions in the mission settings. It is advised to spawn one at a time, and only spawn new A2A missions when one is complete.
+
+Air to Ground  - The mission will dynamically generate ground targets in a random location. There are several difficulties to choose from:
+
+HARD - SAMs may be present.
+EASY (Multirole) - No SAMs will be present.
+Helo - These missions will spawn closer to the home base.
+Helo Infantry Assault - These missions are designed for dropping off troops and/or utilizing gunship helos.
+Anti-Ship - This will spawn a group of enemy ships.
+
+Mission WPT Label definitions (the labels that appear on your HSI/planning tools in-aircraft)
+
+MR - Multirole/A2G Easy
+AG - A2G Hard
+AGH - A2G Helo/Infantry
+
+Labeled same as mission zones in mission editor.
+
+Random/Ambient Events:
+
+- Random enemy A2A groups will spawn from time to time. This can optionally be configured and/or disabled in the mission settings.
+
+- Random enemy vehicle or troop reinforcments might show up at active ground missions at random times. This can optionally be configured and/or disabled in the mission settings.
+______________
+
+Mission Eras: Choose between the following mission eras in the mission settings to set your experience to.
+
+Modern: Modern era sea, ground and air units will spawn at missions. All friendly logistics such as tankers, carriers, troop helicopters will be available.
+
+Korean War: Korean War era sea, ground and air units will spawn at missions. All friendly logistics such as tankers, carriers, troop helicopters will not be available.
+
+World War 2: World War 2 era sea, ground and air units will spawn at missions. All friendly logistics such as tankers, carriers, troop helicopters will not be available.
+
+World War 2 Asset Pack Module: - This will insert the additional paid WW2 Asset Pack units into all mission types when enabled for either Korean War or World War 2
+
+______________
+
+Other F10 Menu Options:
+
+EWRS - A dynamic AWACS reporting system.
+
+JTAC Status - Shows detailed location information on an active target. 
+
+Intel Menu - You can have target areas smoked as well as get location via GRID, since some airframes cannot utilize LAT/LONG.
+
+Debug Menu - Options to reset Tankers or AWACS if needed.
+
+AIRBOSS Menu (Only on maps with Carrier Ops) - Advanced carrier ops scripts and functions, more details here:
+https://flightcontrol-master.github.io/MOOSE_DOCS_DEVELOP/Documentation/Ops.Airboss.html
+
+AIRBOSS MENU NOT POPPING UP? Try switching slots a few times.
+
+Recovery Helo and Recovery Tankers are available for AIRBOSS!
+
+______________
+
+Smoke Colors (where applicable)
+
+ORANGE SMOKE: Ground Target AREA (deploys via F10 Other Menu)
+
+RED SMOKE: Marked target by JTAC, lased as well. - Use JTAC status in F10 Other Menu for the laser code
+
+WHITE SMOKE: CTLD Troop Pickup Zone (can be turned off in the mission settings)
+
+BLUE SMOKE: Friendly drop off site or downed pilot pickup site.
+
+______________
+
+Mission Enhancer Package by daemon1808:
+Mission Enhancer Package (M.E.P) allows you to enhance an existing mission giving you the hability to request support assets in a inmersive way during the mission.
+
+You can request SEAD missions, AC130 Strikes, Buddy lase, Recon target area, etc easily through the F10 radio menu.
+
+Video tutorials and information of this script package here:
+https://forums.eagle.ru/topic/289944-mission-enhancer-package-a-mod-for-request-live-support-during-a-mission/
+https://www.digitalcombatsimulator.com/en/files/3320007/
+
+______________
+
+CTLD Menu for Helos:
+
+Troop Pickup: GREEN SMOKE
+Spawn Crates at Troop Pickup Zones near the Stryker Vehicle.
+Some units require several crates to build them.
+Hover over crates to pick them up. (can be set to real sling loading mission settings)
+CTLD Menu not showing up? Try leaving the helo slot for another vehicle and then choose the helo slot again.
+
+Full CTLD usage information:
+https://github.com/ciribob/DCS-CTLD
+
+YOU CAN ENABLE REAL SLINGLOADING OR HOVER SIMULATED LOADING IN THE DEFINE MISSION SETTINGS IN THE MISSION EDITOR TRIGGER LIST.
+______________
+
+CSAR Menu for Helos:
+
+- Rescue player and AI ejected friendlies on the map. Pick them up (Infantry on ground, or use CSAR menus to find their location)
+- Return them to SHIP, AIRFIELD, or FARP
+- You can FORCE a CSAR mission using the "Force CSAR Mission" radio menu option.
+
+Full CSAR usage information:
+https://github.com/ciribob/DCS-CSAR
+
+______________
+
+Super Carrier Static Deck Spawns Menu available! - Super Carrier Maps ONLY.
+
+Big thanks to Redkite for allowing me to add these amazing static deck layouts for the Super Carrker.
+
+You do not have to add these template scripts in yourself, you can simply adjust the layouts using the F10 Menu to add static layouts and remove them. You can mix and match as you please in REAL TIME during the mission.
+
+Layout Scripts Created by Redkite
+https://www.digitalcombatsimulator.com/en/files/3309905/
+https://youtu.be/XONOFbhwbsU
+https://www.youtube.com/user/RedKiteRender/
+______________
+
+AIRBOSS AVAILABLE FOR CARRIER OPS! (Not included on maps where carriers are not present)
+https://flightcontrol-master.github.io/MOOSE_DOCS_DEVELOP/Documentation/Ops.Airboss.html
+______________
+
+AI Helo-Troop Transport Script by 107th Rz and 107th deadlyfishes
+
+In the settings in the mission triggers labeled as:
+"AI TROOP TRANSPORT SETTINGS"
+
+Change in qoutes which mission where you want troops to be dropped off.
+NOTE: The helo will START at the MAIN AIRBASE. A2G Easy/Hard can be quite far from the main airbase. We recommend choosing A2G Inf ASsault or A2G Helo Missions.
+
+
+ai_troops_transport_location = "a2g easy"
+
+choices:
+"a2g helo"
+"a2g infantry assault"
+"a2g easy"
+"a2g hard"
+"none"
+
+CTLD Extract/Pickup DOES WORK with these troops!
+
+______________
+
+Call in an AI Helo-Troop Transport:
+1) Place a map marker where you want droops to be dropped off.
+2) Type in the map marker "drop troops here" without the qoutes.
+3) CLOSE the map marker by hitting the X button on the map marker and watch a helo come in to drop off troops at that location!
+4) command troops to do whatever you want. You can even extract/re-deploy them with CTLD.
+
+Official Through The Inferno website:
+http://www.throughtheinferno.com
+
+ED Forum Information and Support Forum Post:
+https://forums.eagle.ru/showthread.php?t=175802
+
+Join our Through The Inferno Multiplayer Community Discord:
+https://discord.gg/BRF2pcN
+
+_________________
+
+"ZEUS" MAP MARKER SPAWNS AND COMMANDS:
+You can CREATE and DESTROY units out of thin air at ANY location you choose on the F10 map, like in "Zeus" mode from ArmA 3.
+
+Call in an AI Helo-Troop Transport:
+1) Place a map marker where you want droops to be dropped off.
+2) Type in the map marker "drop troops here" without the qoutes.
+3) CLOSE the map marker by hitting the X button on the map marker and watch a helo come in to drop off troops at that location!
+4) command troops to do whatever you want. You can even extract/re-deploy them with CTLD.
+
+Create smoke marker on map marker:
+1) add marker where you want to create a smoke marker
+2) Type "-smoke" followed by the color smoke you want to create by using either; red, blue, white, green or orange.
+3) CLOSE/REMOVE the map marker by hitting the X button on the map marker box.
+
+Example: "-smoke red" will create a red smoke where you placed the map marker.
+
+Create flare launch markers on map marker:
+1) add marker where you want to create flare launches
+2) Type "-flare" followed by the color smoke you want to create by using either; red, white, green or yellow.
+3) CLOSE/REMOVE the map marker by hitting the X button on the map marker box.
+
+Example: "-flare red" will launch red flares where you placed the map marker.
+
+Create illumination rounds to light up an area on a map marker:
+1) add marker where you want illumination rounds to be created to light up that area
+2) Type "-light", "-illum" or "-illuminate" where you want the illumination rounds to be created
+3) CLOSE/REMOVE the map marker by hitting the X button on the map marker box.
+
+Create units:
+1) Add a map marker of where you want to create a unit. DO NOT TYPE ANYTHING OR HIT ENTER JUST YET.
+
+2) Type in "-create [NAME OF UNIT YOU WANT TO SPAWN FROM THE LIST]" DO NOT HIT ENTER OR LEAVE THE MARKER ON THE MAP JUST YET.
+Example "-create red_cap_f14b" will create an element of REDFOR AI F-14's
+"jtac" and "abrams" are friendly units to use combined arms with. Use the JTAC to spawn it anywhere to get a friend to control it for some fun Co-Op action!
+Also, try creating your own ground attack units using the armor or infantry group spawn for an easier bulk spawn
+
+UNITS CAN BE STACKED! Spawn as many of any unit as you like to create your own ground missions or air missions!
+
+Tutorial here: on how to spawn units
+http://www.throughtheinferno.com/wp-content/files/zeus_example.gif
+
+(all listed are RED coalition units, using blue instead will spawn it as a blue coalition unit!)
+
+to spawn red aav7: "-create red_ar_aav7"
+to spawn blue aav7: "-create blue_ar_aav7"
+
+NOTE: for performance reasons, you need make the debug setting "allow_blue_zeus_units" in the settings is set to true. Disable this if you are having issues with game crashes or performance.
+"allow_blue_zeus_units = true"
+
+additionally:
+jtac --> (this is a MQ Drone that designates and lases targets where you place it!) (use "-create jtac")
+
+Destroy Ground Units: (Only works for ground units):
+1) Add a map marker on top of the ground units you want to destroy/delete. DO NOT TYPE ANYTHING OR HIT ENTER JUST YET.
+
+2) Type in "-destroy" and hit the X button on the map marker (top right of the box) to rid the area of ground units or ships.
+
+Good for: Removing missions you don't want to complete or deleting your spawned in JTAC or Friendly Combined Arms units you no longer want in your mission.
+WARNING: There is no way to get back friendly ship units, you'll have to restart the mission.
+
+SPAWNABLE RED/BLUE UNITS LIST:
+
+-------Ground Units
+----armor
+red_ar_aav7
+red_ar_btr80
+red_ar_btr82a
+red_ar_apc_cobra
+red_ar_hmv_armed
+red_ar_stryker
+red_ar_m113
+red_ar_mtlb
+red_ar_bdrm2
+red_ar_btrrd
+red_ar_hmv_tow
+red_ar_stryker_tow
+red_ar_fddm_grad
+red_ar_bmd1
+red_ar_bmp1
+red_ar_bmp2
+red_ar_bmp3
+red_ar_lav25
+red_ar_bradley
+red_ar_marder
+red_ar_mcv80
+red_ar_stryker_mgs
+red_ar_fuchs
+red_ar_zbd04a
+red_ar_pt76
+red_ar_mephisto
+
+----tanks
+red_ar_mbt_challenger2
+red_ar_mbt_leclerc
+red_ar_mbt_leopard1a3
+red_ar_mbt_leopard2
+red_ar_mbt_abrams
+red_ar_mbt_patton
+red_ar_mbt_merkava
+red_ar_mbt_t72b
+red_ar_mbt_t72b3
+red_ar_mbt_t80u
+red_ar_mbt_t90
+red_ar_mbt_t55
+red_ar_mbt_ztz96b
+
+----arty
+red_arty_mortar
+red_arty_smerch
+red_arty_uraganbm27
+red_arty_bm21_grad
+red_arty_fddm
+red_arty_m270
+red_arty_gvozdika
+red_arty_msta
+red_arty_akatsia
+red_arty_paladin
+red_arty_dana
+red_arty_smerch_he
+red_arty_plz05
+red_arty_t155_firtina
+red_arty_sau2
+
+---fortification
+red_fort_armed_house
+red_fort_barracks
+red_fort_bunker1
+red_fort_bunker2
+red_fort_outpost
+red_fort_road_outpost
+red_fort_watch_tower
+
+----red infantry
+red_inf_georgia_m4
+red_inf_m4
+red_inf_ak
+red_inf_m249
+red_inf_insurgent_sol
+red_inf_rus_sol
+red_inf_paratrooper_aks
+red_inf_paratrooper_rpg
+
+----unarmed
+red_ua_hmv
+red_ua_apc_tiger
+red_ua_cp_predator
+red_ua_cp_predator_trojan
+red_ua_cp_skp11
+red_ua_ural_pbu
+red_ua_fuel_atmz5
+red_ua_fuel_atz10
+red_ua_apa_ural
+red_ua_apa_zil
+red_ua_hemtt_tfft
+red_ua_tanker_hemtt
+red_ua_fireengine_ural
+red_ua_gaz3307
+red_ua_gaz3308
+red_ua_gaz66
+red_ua_ikarus280
+red_ua_kmaz43101
+red_ua_kraz6322
+red_ua_laz695
+red_ua_m818
+red_ua_maz6303
+red_ua_uaz469
+red_ua_ural375
+red_ua_ural4320
+red_ua_ural4320t
+red_ua_vaz2109
+red_ua_zil131_kung
+red_ua_zil4331
+red_ua_ziu9
+red_ua_zil135
+red_ua_tz22_kraz
+red_ua_atz60_maz
+red_ua_atz5
+red_ua_aa8
+red_ua_liaz_bus
+
+----aa aaa
+red_aa_aaa_vulcanm163
+red_aa_aaa_zsu572
+red_aa_aaa_zu23_closed
+red_aa_aaa_zu23_emplacement
+red_aa_aaa_zu23_insurgent
+red_aa_aaa_zu23_insurgent_closed
+red_aa_aaa_zu23_insurgent_ural
+red_aa_aaa_zu23_ural
+red_aa_aaa_shilka
+red_aa_aaa_gepard
+
+----aa ewr
+red_aa_ewr_sborka
+red_aa_ewr_1l13
+red_aa_ewr_55g6
+red_aa_ewr_srp19
+----aa sam tac (single unit SAM)
+
+red_aa_sam_tac_linebacker
+red_aa_sam_tac_sa8
+red_aa_sam_tac_sa9
+red_aa_sam_tac_sa13
+red_aa_sam_tac_sa15
+red_aa_sam_tac_sa19
+red_aa_sam_tac_manpads
+red_aa_sam_tac_avenger
+red_aa_sam_tac_chaparral
+
+----aa sam tempaltes (requires radar units etc)
+red_aa_sam_hq7
+red_aa_sam_rapier
+red_aa_sam_hawk
+red_aa_sam_patriot
+red_aa_sam_roland
+red_aa_sam_nasams
+red_aa_sam_sa10
+red_aa_sam_sa11
+red_aa_sam_sa6
+red_aa_sam_sa5
+red_aa_sam_sa3
+red_aa_sam_sa2
+red_aa_sam_stinger_manpads
+red_aa_sam_igla_manpads
+
+----ww2 armor free
+red_ar_m2a1
+red_ar_kfz251
+
+----ww2 tanks free
+red_ar_mbt_sherman
+red_ar_mbt_pz_iv
+
+----- ww2 unarmed free
+red_ua_bedford_mwd
+red_ua_blitz6700
+red_ua_land_rover_101
+red_ua_land_rover_109
+
+----ww2 aa free
+red_aa_aaa_flak18
+red_aa_aaa_bofors40
+
+
+------Aircraft
+----USA
+red_cap_f18
+red_cap_f4
+red_cap_f14a
+red_cap_f15
+red_cap_f16
+red_cap_f14b
+red_cap_f5
+----trainer
+red_cap_l39
+red_cap_c101
+----Multinational Modern
+red_cap_su27
+red_cap_su30
+red_cap_su33
+red_cap_su34
+red_cap_j11
+red_cap_jf17
+red_cap_mig25
+red_cap_mig29s
+red_cap_mig23
+red_cap_m2000
+red_cap_m20005
+red_cap_mf1
+red_cap_mig29a
+red_cap_mig31
+red_cap_mig21
+red_cap_mig19
+red_cap_su24mr
+red_cap_su24m
+red_cap_su17m4
+red_cap_mig27k
+red_cap_ajs37
+
+-----Korean War
+red_cap_mig15
+red_cap_f86
+
+-----WW2
+red_cap_spitfire
+red_cap_p51
+red_cap_p47
+red_cap_bf109
+red_cap_fw190
+red_cap_i16
+red_cap_mosquito
+----Bombers WW2
+red_bombing_a20g
+red_bombing_mosquito
+
+-----Anti-Ship
+red_antiship_tu22m3
+red_antiship_tu42
+red_antiship_b52
+
+-----Bombers
+red_bombing_tu22m3
+red_bombing_b1b
+red_bombing_b52
+red_bombing_tornado
+red_bombing_h6j
+red_bombing_su34
+
+------Helicopter Units
+red_helo_ah1w
+red_helo_ah64a
+red_helo_ah64d
+red_helo_ch74d
+red_helo_ch53e
+red_helo_ka27
+red_helo_ka50
+red_helo_mi24v
+red_helo_mi26
+red_helo_mi28n
+red_helo_mi8
+red_helo_oh58d
+red_helo_sa342m
+red_helo_sa342l
+red_helo_sa342mis
+red_helo_sh60b
+red_helo_uh1h
+red_helo_uh60
+
+------Ship Units
+
+-----Russia
+red_ship_speedboat
+red_ship_moskva
+red_ship_pyotor
+red_ship_grisha
+red_ship_neustrashimy
+red_ship_molniya
+red_ship_rezky
+-----USA
+red_ship_perry
+red_ship_ticonderoga
+red_ship_burke
+----GERMANY
+red_ship_la_combattante
+-----China Military
+red_ship_destroyer_052b
+red_ship_destroyer_052c
+red_ship_amp_071
+red_ship_frigate_054a
+-----Submarines
+red_sub_ssk_641b
+red_sub_ssk_877
+red_sub_093
+-----Civilian
+red_ship_civil_zvezdny
+red_ship_cargo_yak
+red_ship_cargo_ivanov
+red_ship_tanker_elnya
+red_ship_handywind
+red_ship_seawise_giant
+
+---WW2 ASSET PACK (PAID) 
+Do not enable WW2 ASSET PACK if you do not own it. 
+Do not spawn WW2 Asset Pack units if you do not own it and/or have it disabled in the mission era settings. 
+Your game may crash or errors may occur
+
+--Armor
+red_ar_m8_greyhound
+red_ar_daimler
+red_ar_centaur
+red_ar_churchhill
+red_ar_cromwell
+red_ar_tiger2
+red_ar_tiger1
+red_ar_sherman_ff
+red_ar_jagdpanther
+red_ar_jagpz
+red_ar_pzvpanther
+red_ar_stug
+red_ar_elefant
+red_ar_m10gmc
+red_ar_sturmpziv
+
+--AAA
+red_aa_aaa_flakscheinwerfer
+red_aa_aaa_qf37
+red_aa_aaa_m45quad
+red_aa_aaa_flak30
+red_aa_aaa_flak38
+red_aa_aaa_m137
+red_aa_aaa_flak41
+red_aa_aaa_flak37
+red_aa_aaa_flak36
+
+--ARTILERY
+red_arty_m12_gmc
+
+--UNARMED
+red_ua_cckw
+red_ua_m4tractor
+red_ar_kubelwagen
+red_ua_kfz2
+red_ua_horch
+red_ua_kfz7
+red_ua_m30cc
+red_ua_willysmb
+
+--INFANTRY
+red_inf_soldier_wwii_br
+red_inf_soldier_wwii_gr
+red_inf_soldier_wwii_us
+
+--SHIPS
+red_ship_ww2_uss_samuel_chase
+red_ship_ww2_lstmk2
+red_ship_ww2_uboatviic
+red_ship_ww2_schnellboot
+red_ship_ww2_higgins
+
+--AIRCRAFT
+red_bombing_ju88a4
+red_cap_ju88a4
+red_bombing_b17g
+red_cap_b17g
