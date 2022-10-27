@@ -52,8 +52,8 @@ MOVING.activeSites = {}
 -- @field #string kbName Lable for moving. MUST be UNIQUE.
 -- @field #string menuText Text to be used for the moving's menu.
 MOVING.zones = {
-  { zoneName = "Convoy Start 1", kbName = "CS1", menuText = "Convoy Start 1"},
-  { zoneName = "Convoy Start 2", kbName = "CS2", menuText = "Convoy Start 2"},
+  { zoneName = "Convoy Start 1", kbName = "Mov CS1", menuText = "Convoy Start 1"},
+  { zoneName = "Convoy Start 2", kbName = "Mov CS2", menuText = "Convoy Start 2"},
   }
 
 --- THREATS

@@ -53,10 +53,10 @@ KILLBOX.activeSites = {}
 -- @field #string kbName Lable for killbox. MUST be UNIQUE.
 -- @field #string menuText Text to be used for the killbox's menu.
 KILLBOX.zones = {
-  { zoneName = "Kill Box N", kbName = "N", menuText = "N"},
-  { zoneName = "Kill Box S", kbName = "S", menuText = "S"},
-  { zoneName = "Kill Box E", kbName = "E", menuText = "E"},
-  { zoneName = "Kill Box W", kbName = "W", menuText = "W"},
+  { zoneName = "Kill Box N", kbName = "kbSAM_N", menuText = "N"},
+  { zoneName = "Kill Box S", kbName = "kbSAM_S", menuText = "S"},
+  { zoneName = "Kill Box E", kbName = "kbSAM_E", menuText = "E"},
+  { zoneName = "Kill Box W", kbName = "kbSAM_W", menuText = "W"},
   }
 
 --- THREATS

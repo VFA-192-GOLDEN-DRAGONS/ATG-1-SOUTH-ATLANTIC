@@ -5,8 +5,30 @@ env.info("tankers loading", false)
 -----------------
 SPAWN:New('bEWR_AWACS_MAGIC'):InitLimit(1,99):SpawnScheduled(60,1):InitRepeatOnLanding()
 SPAWN:New('bEWR_AWACS_DARKSTAR'):InitLimit(1,99):SpawnScheduled(60,1):InitRepeatOnLanding()
---SPAWN:New('AWACS_BEAR'):InitLimit(1,99):SpawnScheduled(60,1):InitRepeatOnEngineShutDown()
 
+
+-------------------
+-- F10 RED AWACS --
+-------------------
+
+function RedAWACSSpawn ()
+  RedAWACS = SPAWN:New('AWACS_BEAR'):InitLimit(1,99):SpawnScheduled(60,1):InitRepeatOnEngineShutDown()
+end
+
+function RedAWACSdestroy ()
+  RedAWACS:SpawnScheduleStop()
+  RedAWACSdel=SET_GROUP:New():FilterPrefixes("AWACS_BEAR#"):FilterActive(true):FilterOnce()
+  local RedAWACSdelcount=RedAWACSdel:Count()
+    for i = 1, RedAWACSdelcount do
+      local grpObj = RedAWACSdel:GetRandom()
+      --env.info(grpObj:GetName())
+      grpObj:Destroy(true)
+    end
+end
+
+RedAWACS = MENU_COALITION:New(coalition.side.BLUE, "RED PVP AWACS")
+MENU_COALITION_COMMAND:New(coalition.side.BLUE, "SPAWN RED PVP AWACS", RedAWACS, RedAWACSSpawn)
+MENU_COALITION_COMMAND:New(coalition.side.BLUE, "REMOVE RED PVP AWACS", RedAWACS, RedAWACSdestroy)
 
 ------------------
 -- TANKER START --
